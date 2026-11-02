@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DARKNOVA STUDIOS</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ background:#070710;
+ color:white;
+ font-family:Arial,sans-serif;
+ overflow-x:hidden;
+}
+body:before{
+ content:"";
+ position:fixed;inset:0;z-index:-1;
+ background:
+ radial-gradient(ellipse at 20% 20%,#28105b66,transparent 45%),
+ radial-gradient(ellipse at 80% 70%,#092e5366,transparent 45%);
+}
+nav{
+ display:flex;justify-content:space-between;align-items:center;
+ padding:25px 8%;border-bottom:1px solid #ffffff15;
+ background:#080812cc;backdrop-filter:blur(15px);
+ position:sticky;top:0;z-index:10;
+}
+.logo{font-size:24px;font-weight:900;letter-spacing:4px}
+.logo span{color:#a855f7}
+nav a{color:#aaa;text-decoration:none;margin-left:25px}
+nav a:hover{color:#b76aff}
+.hero{
+ min-height:620px;display:flex;flex-direction:column;
+ align-items:center;justify-content:center;text-align:center;
+ padding:80px 20px;
+}
+.tag{color:#ad65ff;letter-spacing:5px;font-size:12px}
+h1{
+ font-size:clamp(48px,10vw,105px);
+ letter-spacing:8px;margin:25px 0;
+ text-shadow:0 0 35px #9333ea99;
+}
+.hero p{color:#aaa;font-size:18px;max-width:600px;line-height:1.7}
+.button{
+ display:inline-block;margin-top:35px;padding:15px 35px;
+ border:1px solid #a855f7;border-radius:8px;
+ color:white;text-decoration:none;transition:.3s;
+}
+.button:hover{background:#9333ea;box-shadow:0 0 30px #9333ea}
+section{padding:85px 8%}
+.heading{text-align:center;margin-bottom:45px}
+.heading h2{font-size:36px;letter-spacing:3px}
+.heading p{color:#888;margin-top:12px}
+.projects{
+ display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+ gap:25px;
+}
+.card{
+ background:linear-gradient(145deg,#171426,#0c0c17);
+ border:1px solid #ffffff18;border-radius:16px;
+ overflow:hidden;transition:.35s;
+}
+.card:hover{transform:translateY(-9px);border-color:#a855f7;box-shadow:0 15px 45px #9333ea22}
+.art{
+ height:190px;display:flex;align-items:center;
+ justify-content:center;font-size:65px;
+ background:radial-gradient(circle,#54218b,#10101e 70%);
+}
+.card:nth-child(2) .art{background:radial-gradient(circle,#174c75,#10101e 70%)}
+.card:nth-child(3) .art{background:radial-gradient(circle,#54204e,#10101e 70%)}
+.info{padding:25px}
+.status{color:#b76aff;font-size:11px;letter-spacing:2px;font-weight:bold}
+.info h3{font-size:23px;margin:13px 0}
+.info p{color:#999;line-height:1.6;font-size:14px}
+.date{margin-top:20px;color:white;font-weight:bold}
+.about{
+ text-align:center;background:#ffffff05;
+ border-top:1px solid #ffffff12;border-bottom:1px solid #ffffff12;
+}
+.about p{max-width:700px;margin:20px auto;color:#aaa;line-height:1.8}
+footer{
+ text-align:center;padding:35px;color:#666;
+ border-top:1px solid #ffffff12;font-size:13px;
+}
+footer strong{color:#a855f7}
+@media(max-width:600px){
+ nav{padding:20px 5%}
+ nav a{margin-left:10px;font-size:12px}
+ .logo{font-size:18px;letter-spacing:2px}
+ section{padding:65px 6%}
+}
+</style>
+</head>
+<body>
+
+<nav>
+ <div class="logo">DARK<span>NOVA</span></div>
+ <div>
+  <a href="#inicio">Inicio</a>
+  <a href="#proyectos">Proyectos</a>
+  <a href="#nosotros">Estudio</a>
+ </div>
+</nav>
+
+<header class="hero" id="inicio">
+ <div class="tag">INDEPENDENT GAME DEVELOPMENT</div>
+ <h1>DARKNOVA</h1>
+ <p>Exploramos nuevas ideas. Creamos nuevos mundos.
+ Nuestro próximo universo comienza aquí.</p>
+ <a class="button" href="#proyectos">DESCUBRIR PROYECTOS ↓</a>
+</header>
+
+<section id="proyectos">
+ <div class="heading">
+  <h2>NUESTROS PROYECTOS</h2>
+  <p>El futuro del gaming está en construcción.</p>
+ </div>
+
+ <div class="projects">
+
+  <article class="card">
+   <div class="art">🌌</div>
+   <div class="info">
+    <div class="status">PRÓXIMO LANZAMIENTO</div>
+    <h3>DASHSPACE</h3>
+    <p>Un universo de plataformas, desafíos y creatividad.</p>
+    <div class="date">DICIEMBRE 2026</div>
+   </div>
+  </article>
+
+  <article class="card">
+   <div class="art">🏙️</div>
+   <div class="info">
+    <div class="status">EN EL HORIZONTE</div>
+    <h3>GRAND TOWN MADENVERGE</h3>
+    <p>Una nueva aventura. Un mundo por descubrir.</p>
+    <div class="date">2027</div>
+   </div>
+  </article>
+
+  <article class="card">
+   <div class="art">❓</div>
+   <div class="info">
+    <div class="status">PROYECTO SECRETO</div>
+    <h3>???</h3>
+    <p>Hay algo más en desarrollo. Su identidad permanece oculta.</p>
+    <div class="date">2027</div>
+   </div>
+  </article>
+
+ </div>
+</section>
+
+<section class="about" id="nosotros">
+ <div class="heading">
+  <h2>BEYOND THE UNKNOWN</h2>
+  <p>Más allá de lo desconocido.</p>
+ </div>
+ <p>DARKNOVA STUDIOS es un espacio dedicado a imaginar,
+ desarrollar y dar vida a nuevos videojuegos.
+ Cada proyecto es una nueva aventura.</p>
+</section>
+
+<footer>
+ <strong>DARKNOVA STUDIOS</strong>
+ <p style="margin-top:12px">© 2026 DARKNOVA STUDIOS. Todos los derechos reservados.</p>
+ <p style="margin-top:8px">BEYOND THE UNKNOWN.</p>
+</footer>
+
+</body>
+</html>
